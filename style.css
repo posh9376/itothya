@@ -1,0 +1,233 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "IBM Plex Sans 300", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    background-color: #2886c3;
+}
+.logo{
+    width: 150px;
+    height: 8vh;
+    background-color: white;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+
+}
+nav div{
+    padding: 20px;
+    border-radius: 10px;
+}
+nav div:hover, nav a:hover{
+    background-color: #feb044;
+    box-shadow: 0 0 10px #feb044;
+}
+.hero-div{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    height: 95vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.493),rgba(0, 0, 0, 0.514)), url(./assets/Eric_Richard_Develop_an_image_in_landscape_of_a_reception_offic_a8d7d5db-e5cc-4a77-9cb9-0ae9387b2b4e.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    
+}
+.floating{
+    font-family: "IBM Plex Sans 300", sans-serif;
+    position: absolute;
+    width: 500px;
+    text-align: center;
+    top: 42%;
+    left: 5%;
+    color: white;
+    font-size: 40px;
+}
+.floating b{
+    color: orange;
+    text-shadow: 0 0 10px;
+}
+.others{
+    position: absolute;
+    text-shadow: 0 0 10px orange,0 0 10px orange;
+    top: 30%;
+    left: 84%;
+    font-family: "IBM Plex Sans 300", sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+}
+#Services{
+    height: 130vh;
+    text-align: center;
+    background-color: black;
+    
+}
+.serve{
+    color: orange;
+    text-shadow:0 0 10px ;
+    padding-top: 20px;
+    font-weight: 900;
+}
+
+.service{
+    padding-left: 20px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.1fr;
+    gap: 5%;
+}
+.card{
+    text-align: center;
+    transition: transform 1s ease-in-out;
+    position: relative;
+    background-color: black;
+    
+}
+.card img{
+    border-radius: 40px;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: 0 0 10px, 0 0 10px;
+}
+.card p{
+    position: absolute;
+    top: 20%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+}
+.reco{
+    grid-area: 3/2/-1/3;
+}
+.card:hover {
+ transform: scale(1.15);
+ opacity: 1;
+}
+.card:hover img{
+    opacity: 0.2;
+    border-radius: 10px;
+    
+}
+
+.card:hover p{
+    opacity: 1;
+    font-size: large;
+    color: white;
+}
+
+.card h2{
+    font-weight: 900;
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    text-shadow: 0 0 10px orange,0 0 10px orange;
+    transition: 1s ease-in-out;
+}
+.card:hover h2{
+    opacity: 0;
+}
+#Contact{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 0.4fr;
+}
+.one{
+    grid-area: 1/1/2/3;
+}
+.two{
+    grid-area: 1/3/2/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9c2f5d;
+}
+.two h3{
+    text-align: center;
+    font-size: 50px;
+}
+.two b {
+    color: #3796d7;
+    font-weight: 900;
+}
+.two span{
+    color: orange;
+}
+
+
+.info{
+    background-color: rgb(228, 227, 225);
+    text-align: center;
+}
+.info h2{
+    color: rgb(224, 154, 23);
+    margin-top: 40%;
+}
+.four{
+    background-color: #2886c3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: xxx-large;
+}
+.four b{
+    color: #feb044;
+    text-shadow:0 0 7px #feb044;
+}
+
+.seven{
+    grid-area: 3/1/-1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+    line-height:20px ;
+    padding-top: 10px;
+}
+
+#About{
+    height: 100vh;
+    padding-left: 20px;
+}
+
+.abt-cont{
+    height:60vh;
+    text-align: center;
+
+}
+.abt-cont h2, .abt-cont h3 {
+    color: #feb044;
+    text-decoration: underline;
+    
+}
+.abt-cont p b {
+    color: #2886c3;
+}
+.clientelle {
+   height: 40vh;
+   background-color: #3796d7;
+}
+.clientelle h2{
+    color: orange;
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow:0 0 10px orange, 0 0 10px black;
+    padding-top: 10px;
+}
+.clientelle img{
+    margin: 20px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #9c2f5d;
+}

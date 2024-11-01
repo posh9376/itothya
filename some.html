@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Hover Effect</title>
+  <style>
+    .container {
+      text-align: center;
+      width: 300px;
+      margin: 20px auto;
+    }
+
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .image-container:hover img {
+      transform: scale(1.1);
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #333;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .container:hover .caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="image-container">
+    <img src="./assets/Eric_Richard_Develop_an_image_in_landscape_of_a_reception_offic_d86b01ed-25f1-4ebd-9c5d-6a57a7e513ff.png" alt="Sample Image">
+  </div>
+  <div class="caption">This is the image caption</div>
+</div>
+
+</body>
+</html>
